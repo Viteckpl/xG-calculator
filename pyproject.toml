@@ -1,0 +1,26 @@
+[project]
+name = "xg-calculator"
+version = "1.0.0"
+description = "Prosty kalkulator xG z interfejsem graficznym"
+authors = [
+  { name="Viteckpl" },
+  { name="ChatGPT" }
+]
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.10"
+dependencies = [
+  "scikit-learn",
+  "joblib",
+  "pandas",
+  "numpy"
+]
+
+[tool.setuptools]
+packages = []
+
+[tool.setuptools.package-data]
+"xg_calculator" = ["model/*.pkl"]
+
+[tool.pyinstaller]
+icon = "unicorn.ico"
